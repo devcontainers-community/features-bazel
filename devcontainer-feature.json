@@ -1,7 +1,7 @@
 {
   "name": "Bazel",
   "id": "bazel",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Bazel feature",
   "options": {
       "bazelisk_version": {
