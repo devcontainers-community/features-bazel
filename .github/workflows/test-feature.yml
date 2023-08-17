@@ -23,7 +23,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        includes:
+        include:
           - image: mcr.microsoft.com/devcontainers/base:ubuntu
             options: '{ "bazelisk_version": "1.17.0" }'
           - image: debian:bookworm-slim
