@@ -1,5 +1,8 @@
 #!/bin/bash
 set -eu
+source lib.sh
+
+check_packages curl ca-certificates
 
 echo "Installing Bazel"
 
