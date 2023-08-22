@@ -18,5 +18,6 @@ EOF
 rsync -av --exclude .git "$feature_dir/" "$PWD/.devcontainer/feature/"
 tree -a
 container_id=$(devcontainer up --workspace-folder . | jq -r .containerId)
-devcontainer exec --workspace-folder . bazel --version
+devcontainer exec --workspace-folder . bash -c "bazelisk version | grep \"Bazelisk version: \""
+devcontainer exec --workspace-folder . bash -c "bazelisk version | grep \"Build label: \""
 docker kill "$container_id"

@@ -1,35 +1,19 @@
 {
-  "name": "Bazel",
+  "name": "Bazel (via Bazelisk)",
   "id": "bazel",
-  "version": "1.1.0",
-  "description": "Bazel feature",
-  "documentationURL": "https://github.com/devcontainers-community/features-bazel",
+  "version": "1.0.1",
+  "description": "Bazel is a fast, scalable, multi-language and extensible build system. For specified version set `USE_BASEL_VERSION` env variable in your devcontainer, see documentation https://github.com/bazelbuild/bazelisk",
+  "documentationURL": "https://bazel.build/install/bazelisk",
   "options": {
-      "bazelisk_version": {
-        "type": "string",
-        "proposals": [
-            "1.17.0",
-            "latest"
-        ],
-        "default": "latest",
-        "description": "Version of Bazelisk to manage Bazel versions"
-      },
-      "buildifier_version": {
+      "bazelisk": {
           "type": "string",
           "proposals": [
-              "5.1.0",
-              "6.1.2",
-              "latest"
+              "latest",
+              "v1.15.0",
+              "v1.14.0"
           ],
           "default": "latest",
-          "description": "Version of Buildifier to lint BUILD files"
-      }
-  },
-  "customizations": {
-      "vscode": {
-          "extensions": [
-            "bazelbuild.vscode-bazel"
-          ]
+          "description": "Select or enter a Bazelisk version"
       }
   }
 }
