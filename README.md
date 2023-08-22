@@ -21,7 +21,7 @@ Install [Bazelisk](https://github.com/bazelbuild/bazelisk).
 
 ### Options
 
-You can specify a `bazeliskversion` to pin to a specific version like this:
+You can specify a `bazelisk` version to pin to a specific version like this:
 
 ```jsonc
 // devcontainer.json
@@ -37,7 +37,7 @@ And to choose a specific Bazel version, do this:
 ```jsonc
 // devcontainer.json
 "features": {
-    "ghcr.io/balazs23/devcontainers-features/bazel:1": {
+    "ghcr.io/devcontainers-community/features/bazel:1": {
         "bazelisk": "v1.15.0"
     }
 },
