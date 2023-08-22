@@ -1,7 +1,7 @@
 {
   "name": "Bazel (via Bazelisk)",
   "id": "bazel",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Bazel is a fast, scalable, multi-language and extensible build system. For specified version set `USE_BASEL_VERSION` env variable in your devcontainer, see documentation https://github.com/bazelbuild/bazelisk",
   "documentationURL": "https://bazel.build/install/bazelisk",
   "options": {
