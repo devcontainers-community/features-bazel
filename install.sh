@@ -18,7 +18,7 @@ github_download() {
     else
         URL="https://github.com/${repo}/releases/download/${version}/${artifact}"
     fi
-    curl -LSs "${URL}" -o "${output}"
+    curl -fSsL "${URL}" -o "${output}"
 }
 
 github_download "bazelbuild/bazelisk" "${BAZELISK_VERSION}" "bazelisk-linux-amd64" "${LOCAL_BIN}/bazelisk"
