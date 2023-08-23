@@ -21,9 +21,27 @@ github_download() {
     curl -LSs "${URL}" -o "${output}"
 }
 
-github_download "bazelbuild/bazelisk" "${BAZELISK_VERSION}" "bazelisk-linux-amd64" "${LOCAL_BIN}/bazelisk"
+arch="$(uname -m)"
+case "${arch}" in
+    x86_64) ARCHITECTURE=amd64 ;;
+    aarch64 | arm64 | armv8*) ARCHITECTURE=arm64 ;;
+    *)
+        echo -e "Unsupported '$arch' architecture"
+        exit 1
+esac
+
+platf="$(uname -s)"
+case "${platf}" in
+    Linux) PLATFORM=linux ;;
+    Darwin) PLATFORM=darwin ;;
+    *)
+        echo -e "Unsupported '$platf' platform"
+        exit 1
+esac
+
+github_download "bazelbuild/bazelisk" "${BAZELISK_VERSION}" "bazelisk-${PLATFORM}-${ARCHITECTURE}" "${LOCAL_BIN}/bazelisk"
 chmod +x "${LOCAL_BIN}/bazelisk"
 ln -s "${LOCAL_BIN}/bazelisk" "${LOCAL_BIN}/bazel"
 
-github_download "bazelbuild/buildtools" "${BUILDIFIER_VERSION}" "buildifier-linux-amd64" "${LOCAL_BIN}/buildifier"
+github_download "bazelbuild/buildtools" "${BUILDIFIER_VERSION}" "buildifier-${platform}-${ARCHITECTURE}" "${LOCAL_BIN}/buildifier"
 chmod +x "${LOCAL_BIN}/buildifier"
