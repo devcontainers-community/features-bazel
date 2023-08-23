@@ -3,6 +3,7 @@ set -euo pipefail
 source lib.sh
 
 check_packages curl ca-certificates
+apt_cleanup
 
 echo "Installing Bazel"
 

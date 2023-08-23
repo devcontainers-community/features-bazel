@@ -16,3 +16,7 @@ check_packages() {
         apt-get -y install --no-install-recommends "$@"
     fi
 }
+
+apt_cleanup() {
+    rm -rf /var/lib/apt/lists/*
+}
