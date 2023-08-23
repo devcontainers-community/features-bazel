@@ -1,5 +1,5 @@
 #!/bin/bash
-set -eu
+set -euo pipefail
 source lib.sh
 
 check_packages curl ca-certificates
