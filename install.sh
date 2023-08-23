@@ -28,3 +28,5 @@ ln -s "${LOCAL_BIN}/bazelisk" "${LOCAL_BIN}/bazel"
 
 github_download "bazelbuild/buildtools" "${BUILDIFIER_VERSION}" "buildifier-linux-amd64" "${LOCAL_BIN}/buildifier"
 chmod +x "${LOCAL_BIN}/buildifier"
+
+echo "Done"
