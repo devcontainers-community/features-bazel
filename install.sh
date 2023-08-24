@@ -43,5 +43,5 @@ github_download "bazelbuild/bazelisk" "${BAZELISK_VERSION}" "bazelisk-${PLATFORM
 chmod +x "${LOCAL_BIN}/bazelisk"
 ln -s "${LOCAL_BIN}/bazelisk" "${LOCAL_BIN}/bazel"
 
-github_download "bazelbuild/buildtools" "${BUILDIFIER_VERSION}" "buildifier-${platform}-${ARCHITECTURE}" "${LOCAL_BIN}/buildifier"
+github_download "bazelbuild/buildtools" "${BUILDIFIER_VERSION}" "buildifier-${PLATFORM}-${ARCHITECTURE}" "${LOCAL_BIN}/buildifier"
 chmod +x "${LOCAL_BIN}/buildifier"
