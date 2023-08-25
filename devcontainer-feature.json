@@ -8,7 +8,7 @@
       "bazelisk_version": {
         "type": "string",
         "proposals": [
-            "1.17.0",
+            "v1.18.0",
             "latest"
         ],
         "default": "latest",
@@ -17,8 +17,8 @@
       "buildifier_version": {
           "type": "string",
           "proposals": [
-              "5.1.0",
-              "6.1.2",
+              "v5.1.0",
+              "v6.3.2",
               "latest"
           ],
           "default": "latest",
