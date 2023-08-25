@@ -1,8 +1,9 @@
 #!/bin/bash
-set -eu
+set -euo pipefail
 source lib.sh
 
 check_packages curl ca-certificates
+apt_cleanup
 
 echo "Installing Bazel"
 
@@ -18,7 +19,7 @@ github_download() {
     else
         URL="https://github.com/${repo}/releases/download/${version}/${artifact}"
     fi
-    curl -LSs "${URL}" -o "${output}"
+    curl -fSsL "${URL}" -o "${output}"
 }
 
 arch="$(uname -m)"
@@ -45,3 +46,5 @@ ln -s "${LOCAL_BIN}/bazelisk" "${LOCAL_BIN}/bazel"
 
 github_download "bazelbuild/buildtools" "${BUILDIFIER_VERSION}" "buildifier-${PLATFORM}-${ARCHITECTURE}" "${LOCAL_BIN}/buildifier"
 chmod +x "${LOCAL_BIN}/buildifier"
+
+echo "Done"
