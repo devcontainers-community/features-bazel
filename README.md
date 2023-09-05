@@ -28,8 +28,11 @@
 
 This Feature installs Bazel using [Bazelisk]. Then, it symlinks
 `/usr/local/bin/bazel` to the Bazelisk installation so that you can use `bazel`
-as normal through `bazelisk`. It also installs the [Bazel VS Code extension].
-Oh, and it also installs [Buildifier] for your convenience. 😉
+as normal through `bazelisk`. The main feature of Bazelisk is that it
+automatically uses the correct Bazel version based on things like
+`$USE_BAZEL_VERSION`, `.bazeliskrc`, `.bazelversion`, and more. This feature
+also installs the [Bazel VS Code extension]. Oh, and it also installs
+[Buildifier] for your convenience. 😉
 
 ## Usage
 
