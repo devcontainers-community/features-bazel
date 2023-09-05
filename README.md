@@ -23,7 +23,7 @@
 >   platforms with Bazel's familiar extension language. Share and re-use
 >   language rules written by the growing Bazel community.
 
-&mdash; - [bazelbuild/bazel](https://github.com/bazelbuild/bazel)
+&mdash; [bazelbuild/bazel](https://github.com/bazelbuild/bazel)
 
 This Feature installs Bazel using [Bazelisk]. Then, it symlinks
 `/usr/local/bin/bazel` to the Bazelisk installation so that you can use `bazel`
