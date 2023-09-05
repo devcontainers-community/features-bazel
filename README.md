@@ -36,6 +36,9 @@ also installs the [Bazel VS Code extension]. Oh, and it also installs
 
 ## Usage
 
+![Codespaces](https://img.shields.io/static/v1?style=for-the-badge&message=Codespaces&color=181717&logo=GitHub&logoColor=FFFFFF&label=)
+![Devcontainers](https://img.shields.io/static/v1?style=for-the-badge&message=Devcontainers&color=2496ED&logo=Docker&logoColor=FFFFFF&label=)
+
 ```jsonc
 // devcontainer.json
 "features": {
