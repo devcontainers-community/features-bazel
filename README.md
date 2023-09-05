@@ -54,8 +54,8 @@ the tools like this:
 // devcontainer.json
 "features": {
   "ghcr.io/devcontainers-community/features/bazel": {
-    "bazelisk_version": "1.17.0",
-    "buildifier_version": "6.1.2"
+    "bazelisk_version": "v1.17.0",
+    "buildifier_version": "v6.1.2"
   }
 }
 ```
