@@ -1,6 +1,6 @@
 # Bazel Dev Container Feature
 
-💚 Installs Bazel and some extra tools
+💚 Installs Bazel tooling
 
 <p align=center>
   <img width=400 src="https://github.com/devcontainers-community/features-bazel/assets/61068799/48f7037a-f389-463c-b9b5-954f169f8aaf">
