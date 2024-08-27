@@ -42,7 +42,7 @@ also installs the [Bazel VS Code extension]. Oh, and it also installs
 ```jsonc
 // devcontainer.json
 "features": {
-  "ghcr.io/devcontainers-community/features/bazel": {}
+  "ghcr.io/devcontainers-community/features/bazel:1": {}
 }
 ```
 
@@ -56,7 +56,7 @@ the tools like this:
 ```jsonc
 // devcontainer.json
 "features": {
-  "ghcr.io/devcontainers-community/features/bazel": {
+  "ghcr.io/devcontainers-community/features/bazel:1": {
     "bazelisk_version": "v1.17.0",
     "buildifier_version": "v6.1.2"
   }
