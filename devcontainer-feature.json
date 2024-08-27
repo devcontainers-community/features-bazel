@@ -1,7 +1,7 @@
 {
   "name": "Bazel",
   "id": "bazel",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Bazel feature",
   "documentationURL": "https://github.com/devcontainers-community/features-bazel",
   "options": {
