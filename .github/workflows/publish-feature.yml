@@ -19,4 +19,11 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-      - uses: devcontainers-community/publish-feature@v1
+      - uses: devcontainers-community/publish-feature@v1        with:
+        files: |
+          devcontainer-feature.json
+          install.sh
+          lib.sh
+          LICENSE
+          README.md
+          test.sh
